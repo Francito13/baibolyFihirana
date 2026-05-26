@@ -1,0 +1,17 @@
+{
+  "name": "Media SDA Ambolokandrina",
+  "short_name": "SDA Media",
+  "description": "Baiboly, Fihirana ary Programa Sabata",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A0F1E",
+  "theme_color": "#0A0F1E",
+  "icons": [
+    {
+      "src": "logoslide.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Media SDA Ambolokandrina</title>
+<meta name="theme-color" content="#0A0F1E">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="logoslide.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+  background:#0A0F1E;color:rgba(255,255,255,0.97);
+  min-height:100vh;overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â SPLASH ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.splash{
+  position:fixed;inset:0;z-index:1000;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:linear-gradient(145deg,#0A0F1E 0%,#0D2140 50%,#0A1628 100%);
+  transition:opacity .7s ease,transform .7s ease;
+}
+.splash.exit{opacity:0;transform:scale(1.06);filter:blur(4px);pointer-events:none}
+.splash-logo{
+  width:110px;height:110px;
+  background:linear-gradient(135deg,#0A84FF,#5AC8FA);
+  border-radius:28px;display:flex;align-items:center;justify-content:center;
+  font-size:50px;
+  box-shadow:0 0 60px rgba(10,132,255,.5),0 0 120px rgba(10,132,255,.2);
+  animation:logoPulse 2s ease-in-out infinite;margin-bottom:24px;
+}
+@keyframes logoPulse{
+  0%,100%{transform:scale(1);box-shadow:0 0 60px rgba(10,132,255,.5),0 0 120px rgba(10,132,255,.2)}
+  50%{transform:scale(1.04);box-shadow:0 0 80px rgba(10,132,255,.7),0 0 160px rgba(10,132,255,.3)}
+}
+.splash-typing{display:flex;flex-direction:column;align-items:center;gap:4px;min-height:100px;margin-bottom:36px}
+.splash-line{font-size:26px;font-weight:500;letter-spacing:1px;color:rgba(255,255,255,.7);height:34px;white-space:nowrap}
+.splash-line.highlight{font-size:36px;font-weight:700;letter-spacing:-.5px;background:linear-gradient(135deg,#fff 0%,rgba(90,200,250,.9) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.splash-cursor{display:inline-block;font-weight:300;color:#5AC8FA;-webkit-text-fill-color:#5AC8FA;width:2px;animation:cursorBlink .6s step-end infinite}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
+.splash-loader{width:200px;height:3px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
+.splash-loader-bar{height:100%;background:linear-gradient(90deg,#0A84FF,#5AC8FA);border-radius:2px;width:0%}
+.splash-skip{
+  position:absolute;top:40px;right:24px;z-index:10;
+  font-size:13px;font-weight:600;letter-spacing:1px;
+  color:rgba(255,255,255,.5);cursor:pointer;
+  padding:8px 16px;border-radius:20px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  transition:all .25s;
+}
+.splash-skip:hover{background:rgba(255,255,255,.15);color:#fff;transform:scale(1.04)}
+.splash-sig{position:absolute;bottom:40px;font-size:13px;color:rgba(255,255,255,.4);letter-spacing:2px;text-transform:uppercase}
+
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â MAIN HOME ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.main-home{
+  position:relative;z-index:1;height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:24px;opacity:0;transition:opacity .6s ease;
+}
+.main-home.visible{opacity:1}
+.main-home-title{text-align:center;margin-bottom:28px}
+.main-home-title h1{
+  font-size:38px;font-weight:800;letter-spacing:-1px;margin-bottom:8px;
+  background:linear-gradient(135deg,#fff 0%,rgba(90,200,250,.9) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.main-home-title p{font-size:14px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase}
+.home-cards{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;max-width:720px}
+.home-card{
+  flex:1;min-width:200px;max-width:280px;
+  padding:28px 22px;border-radius:20px;cursor:pointer;overflow:hidden;
+  background:rgba(255,255,255,.06);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 8px 32px rgba(0,0,0,.25);
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s;
+  text-align:center;position:relative;will-change:transform;
+  animation:cardIn .5s cubic-bezier(.22,1,.36,1) both;
+}
+.home-card:nth-child(1){animation-delay:.1s}
+.home-card:nth-child(2){animation-delay:.18s}
+.home-card:nth-child(3){animation-delay:.26s}
+@keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+.home-card:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+.home-card:active{transform:scale(.97)}
+.home-card::before{content:'';position:absolute;inset:0;background:var(--accent);opacity:.08;border-radius:inherit}
+.home-card.bible{--accent:linear-gradient(135deg,#0A84FF,#5AC8FA)}
+.home-card.hymns{--accent:linear-gradient(135deg,#FF9F0A,#FF6B6B)}
+.home-card.sabata{--accent:linear-gradient(135deg,#34C759,#5AC8FA)}
+.hc-icon{font-size:44px;margin-bottom:12px}
+.hc-title{font-size:20px;font-weight:700;margin-bottom:4px}
+.hc-sub{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:12px}
+.hc-badge{
+  display:inline-block;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);
+}
+.home-sig{position:absolute;bottom:24px;font-size:11px;color:rgba(255,255,255,.3);letter-spacing:2px;text-transform:uppercase}
+.home-visit{position:absolute;bottom:52px;font-size:12px;color:rgba(255,255,255,.45);text-align:center;padding:0 24px;max-width:600px;line-height:1.5;letter-spacing:.3px}
+
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â BG ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.bg-canvas{
+  position:fixed;inset:0;z-index:0;
+  background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(10,132,255,.35) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 80%,rgba(90,200,250,.2) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 50% at 60% 30%,rgba(52,199,89,.1) 0%,transparent 50%),
+    linear-gradient(160deg,#0A0F1E 0%,#0D1B2A 40%,#0A1628 100%);
+  animation:bgPulse 12s ease-in-out infinite alternate;
+}
+@keyframes bgPulse{0%{filter:hue-rotate(0deg) brightness(1)}50%{filter:hue-rotate(10deg) brightness(1.05)}100%{filter:hue-rotate(-5deg) brightness(.98)}}
+
+/* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â SLIDESHOW ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â */
+.slideshow{
+  position:fixed;inset:0;z-index:2000;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s ease;
+}
+.slideshow.open{opacity:1;pointer-events:all}
+
+.slide{
+  position:absolute;inset:0;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  opacity:0;padding:40px 24px;pointer-events:none;
+}
+.slide.active{z-index:2;opacity:1;pointer-events:all}
+.slide.exit{z-index:3;pointer-events:none}
+/* Enter transitions */
+.slide.enter-fade{animation:fadeIn .6s ease both}
+.slide.enter-zoomIn{animation:zoomIn .7s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-zoomOut{animation:zoomOut .7s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-slideLeft{animation:slideInRight .6s ease both}
+.slide.enter-slideRight{animation:slideInLeft .6s ease both}
+.slide.enter-blur{animation:blurIn .7s ease both}
+.slide.enter-rotate{animation:rotateIn .8s cubic-bezier(.22,1,.36,1) both}
+.slide.enter-flip{animation:flipIn .7s ease both}
+/* Exit transitions */
+.slide.exit-fade{animation:fadeOut .5s ease both}
+.slide.exit-zoomIn{animation:fadeOut .4s ease both}
+.slide.exit-zoomOut{animation:zoomOutBig .6s ease both}
+.slide.exit-slideLeft{animation:slideOutLeft .5s ease both}
+.slide.exit-slideRight{animation:slideOutRight .5s ease both}
+.slide.exit-blur{animation:blurOut .5s ease both}
+.slide.exit-rotate{animation:rotateOut .6s ease both}
+.slide.exit-flip{animation:flipOut .5s ease both}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+@keyframes zoomIn{from{opacity:0;transform:scale(1.4)}to{opacity:1;transform:scale(1)}}
+@keyframes zoomOut{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@keyframes zoomOutBig{from{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(1.5)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(120px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideOutLeft{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-120px)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-120px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideOutRight{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(120px)}}
+@keyframes blurIn{from{opacity:0;filter:blur(24px)}to{opacity:1;filter:blur(0)}}
+@keyframes blurOut{from{opacity:1;filter:blur(0)}to{opacity:0;filter:blur(24px)}}
+@keyframes rotateIn{from{opacity:0;transform:rotate(-12deg) scale(.8)}to{opacity:1;transform:rotate(0) scale(1)}}
+@keyframes rotateOut{from{opacity:1;transform:rotate(0) scale(1)}to{opacity:0;transform:rotate(12deg) scale(.8)}}
+@keyframes flipIn{from{opacity:0;transform:perspective(800px) rotateY(90deg)}to{opacity:1;transform:rotateY(0)}}
+@keyframes flipOut{from{opacity:1;transform:perspective(800px) rotateY(0)}to{opacity:0;transform:rotateY(-90deg)}}
+@keyframes slideContentIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.slide h1{
+  font-size:clamp(32px,6vw,64px);font-weight:800;letter-spacing:-1px;
+  line-height:1.2;margin-bottom:12px;
+  text-shadow:0 2px 20px rgba(0,0,0,.5);
+  animation:textFloat 3s ease-in-out infinite;
+}
+.slide .sub{
+  font-size:clamp(16px,2.5vw,26px);font-weight:500;letter-spacing:2px;
+  text-transform:uppercase;color:rgba(255,255,255,.7);
+  text-shadow:0 2px 12px rgba(0,0,0,.4);
+  animation:textFloat 3s ease-in-out 0.3s infinite;
+}
+@keyframes textFloat{
+  0%,100%{transform:translateY(0);opacity:1}
+  50%{transform:translateY(-6px);opacity:0.92}
+}
+.slide-logo{
+  position:absolute;top:16px;right:16px;z-index:6;
+  width:120px;height:120px;border-radius:24px;
+  object-fit:cover;box-shadow:0 2px 12px rgba(0,0,0,.4);
+  border:2px solid rgba(255,255,255,.3);
+}
+.slide .number{
+  position:absolute;top:20px;right:24px;z-index:5;
+  font-size:15px;font-weight:700;letter-spacing:2px;
+  color:rgba(255,255,255,.5);text-shadow:0 2px 8px rgba(0,0,0,.4);
+}
+.slide-signature{
+  position:absolute;bottom:80px;left:50%;transform:translateX(-50%);z-index:5;
+  text-align:center;
+  font-size:18px;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.65);
+  text-shadow:0 2px 12px rgba(0,0,0,.5);
+  white-space:nowrap;
+  transition:opacity .4s ease,transform .4s ease;
+  background:rgba(0,0,0,.35);backdrop-filter:blur(8px);
+  padding:8px 18px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.12);
+}
+
+/* Timer */
+.timer{
+  font-size:clamp(48px,10vw,100px);font-weight:800;letter-spacing:4px;
+  font-variant-numeric:tabular-nums;
+  text-shadow:0 4px 30px rgba(0,0,0,.5);margin:8px 0 4px;
+  background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(90,200,250,.9));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  transition:transform .15s ease;
+}
+.timer.pop{transform:scale(1.06)}
+.timer-bar-wrap{
+  width:min(300px,70vw);height:6px;
+  background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden;
+  margin:12px auto 0;
+}
+.timer-bar{
+  height:100%;background:linear-gradient(90deg,#0A84FF,#5AC8FA);
+  border-radius:3px;width:100%;transition:width 1s linear;
+}
+
+
+
+/* Controls */
+.slide-controls{
+  position:absolute;bottom:0;left:0;right:0;z-index:10;
+  padding:20px 24px 32px;
+  background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,transparent 100%);
+  transition:opacity .35s ease;
+}
+.ctrl-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.ctrl-btn{
+  width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(255,255,255,.12);backdrop-filter:blur(12px);
+  color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;
+  transition:all .2s;flex-shrink:0;
+}
+.ctrl-btn:hover{background:rgba(255,255,255,.2);transform:scale(1.06)}
+.ctrl-btn:active{transform:scale(.92)}
+.ctrl-btn.exit{background:rgba(255,59,48,.25)}
+.ctrl-btn.exit:hover{background:rgba(255,59,48,.4)}
+.ctrl-progress{
+  flex:1;height:4px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden;cursor:pointer;
+}
+.ctrl-progress-fill{height:100%;background:linear-gradient(90deg,#0A84FF,#5AC8FA);border-radius:2px;transition:width .3s}
+.ctrl-label{font-size:13px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:1px;white-space:nowrap;min-width:50px;text-align:center}
+.play-btn{
+  width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;
+  background:linear-gradient(135deg,#0A84FF,#5AC8FA);
+  color:#fff;font-size:26px;display:flex;align-items:center;justify-content:center;
+  transition:all .2s;flex-shrink:0;box-shadow:0 4px 20px rgba(10,132,255,.4);
+}
+.play-btn:hover{transform:scale(1.06);box-shadow:0 6px 28px rgba(10,132,255,.5)}
+.play-btn:active{transform:scale(.92)}
+
+/* Hint overlay */
+.slide-hint{
+  position:absolute;top:16px;left:50%;transform:translateX(-50%);z-index:25;
+  font-size:12px;font-weight:500;letter-spacing:.5px;
+  color:rgba(255,255,255,.6);
+  background:rgba(0,0,0,.5);backdrop-filter:blur(12px);
+  padding:8px 18px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.1);
+  white-space:nowrap;pointer-events:none;
+  transition:opacity .6s ease,transform .6s ease;
+}
+.slide-hint.hide{opacity:0;transform:translateX(-50%) translateY(-10px)}
+
+/* Close btn */
+.slide-close{
+  position:absolute;top:16px;left:16px;z-index:20;
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(0,0,0,.4);backdrop-filter:blur(12px);
+  color:rgba(255,255,255,.7);font-size:20px;display:flex;align-items:center;justify-content:center;
+  transition:opacity .35s ease,background .2s;
+}
+.slide-close:hover{background:rgba(255,59,48,.5);color:#fff}
+
+/* Responsive */
+@media(max-width:500px){
+  .splash-line{font-size:18px}
+  .splash-line.highlight{font-size:26px}
+  .main-home-title h1{font-size:28px}
+  .home-card{min-width:160px;padding:20px 16px}
+  .hc-icon{font-size:32px}
+
+  .ctrl-btn{width:40px;height:40px;font-size:18px}
+  .play-btn{width:48px;height:48px;font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="bg-canvas" aria-hidden="true"></div>
+<div id="root"></div>
+
+<script>
+(function(){
+  const slides = [
+    { id:1, title:"FANAHIN'NY FAMINANIANA", sub:"Fanompoam-pivavahana Sabata", bg:"img1.jpg" },
+    { id:2, title:"DIA-BE", sub:"Famakiana soratra masina", bg:"img2.jpg" },
+    { id:3, title:"DIMY MINITRA", sub:"----", timer:300, bg:"img3.jpg" },
+    { id:4, title:"SEKOLY SABATA", sub:"Famerenan-desona", timer:1800, bg:"img4.jpg" },
+    { id:5, title:"FOLO MINITRA", sub:"Asa fitoriana", timer:600, bg:"img5.jpg" },
+    { id:6, title:"TATITRA SEKOLY SABATA", sub:"Tatitra", bg:"img6.jpg" },
+    { id:7, title:"FILAZANA", sub:"Filazana", bg:"img7.jpg" },
+    { id:8, title:"SALAMO", sub:"Vakiteny Salamo", bg:"img8.jpg" },
+    { id:9, title:"FIARAHABANA", sub:"Fiarahabana", bg:"img9.jpg" },
+    { id:10, title:"ANDININY FOTOTRA", sub:"Andininy Fototra", bg:"img10.png" },
+    { id:11, title:"VAVAKA MANDOHALIKA", sub:"Vavaka", bg:"img11.png" },
+    { id:12, title:"FAMPIRISIHANA FANATITRA sy AMPAHAFOLONY", sub:"Fanatitra sy Ampahafolony", bg:"img12.png" },
+    { id:13, title:"TORITENY HOAN'NY ANKIZY", sub:"Toriteny", bg:"img13.png" },
+    { id:14, title:"CHORALE FE.ZA.SI.A", sub:"Chorale", bg:"img14.png" },
+    { id:15, title:"TORITENY ANTOANDRO", sub:"Toriteny Antoandro", bg:"img15.jpg" },
+    { id:16, title:"MIRARY TOHINY SABATA MAHAFINARITRA", sub:"Amin'ny 14h30 indray", bg:"img16.png" }
+  ];
+
+  const root=document.getElementById('root');
+  let currentSlide=0, timerInterval=null, timerRemaining=0, isPlaying=false;
+  let slideShowEl=null, timerDisplay=null, timerBar=null, progressFill=null, labelEl=null, playBtn=null;
+  const transTypes=['fade','zoomIn','zoomOut','slideLeft','slideRight','blur','rotate','flip'];
+  let transIdx=0;
+  const sigTexts=[
+    "FIANGONANA ADVANTISTA AMBOLOKANDRINA",
+    "AMBOLOKANDRINA ADVENTIST CHURCH",
+    "ÉGLISE ADVENTISTE D'AMBOLOKANDRINA",
+    "ADVENTISTISCHE GEMEINDE AMBOLOKANDRINA",
+    "CHIESA AVVENTISTA DI AMBOLOKANDRINA",
+    "IGLESIA ADVENTISTA DE AMBOLOKANDRINA",
+    "АДВЕНТИСТСКАЯ ЦЕРКОВЬ АМБОЛОКАНДРИНА",
+    "كنيسة السبتيين أمبولوكاندري",
+    "安伯洛坎德里纳基督复临安息日会"
+  ];
+  let sigIdx=0,sigTimer=null;
+
+  const texts=[
+    {text:"Hello",cls:"splash-line"},
+    {text:"Arahabaina fa nahatratra ny Sabata Masina",cls:"splash-line"},
+    {text:"Mifantoha, ka hitahy anao ny Tompo!",cls:"splash-line highlight"}
+  ];
+  const splash=document.createElement('div');splash.className='splash';
+  splash.innerHTML=`
+    <div class="splash-logo">&#x1F54A;</div>
+    <div class="splash-typing" id="splashType"></div>
+    <div class="splash-loader"><div class="splash-loader-bar" id="splashBar"></div></div>
+    <div class="splash-skip" id="splashSkip">Skip &#x2716;</div>
+    <div class="splash-sig">Media SDA Ambolokandrina</div>
+  `;
+  root.appendChild(splash);
+  const tc=document.getElementById('splashType'),bar=document.getElementById('splashBar');
+  let ti=0,ci=0,done=false;
+  function typeNext(){
+    if(ti>=texts.length){if(!done){done=true;bar.style.width='100%';setTimeout(()=>{splash.classList.add('exit');setTimeout(()=>{splash.style.display='none';showHome()},700)},400)}return}
+    const c=texts[ti];
+    if(ci===0){const l=document.createElement('div');l.className=c.cls;l.id='activeLine';tc.appendChild(l)}
+    const l=document.getElementById('activeLine');
+    if(ci<c.text.length){l.textContent=c.text.substring(0,ci+1)+'|';ci++;setTimeout(typeNext,c.text[ci-1]===' '?80:60)}
+    else{l.textContent=c.text;ti++;ci=0;setTimeout(typeNext,500)}
+  }
+
+  function skipSplash(){
+    if(done)return;
+    done=true;ti=texts.length;
+    splash.classList.add('exit');
+    setTimeout(function(){splash.style.display='none';showHome()},400);
+  }
+  document.getElementById('splashSkip').addEventListener('click',skipSplash);
+
+  function showHome(){
+    const home=document.createElement('div');home.className='main-home';home.id='mainHome';
+    home.innerHTML=`
+      <div class="main-home-title">
+        <h1>Media SDA Ambolokandrina</h1>
+        <p>Fitaovam-pivavahana sy fianarana</p>
+      </div>
+      <div class="home-cards">
+        <div class="home-card bible" onclick="location.href='baibolyMG_v2.html'">
+          <div class="hc-icon">&#x1F4D6;</div>
+          <div class="hc-title">Baiboly Masina</div>
+          <div class="hc-sub">Testamenta Taloha sy Vaovao</div>
+          <div class="hc-badge">66 boky</div>
+        </div>
+        <div class="home-card hymns" onclick="location.href='fihirana_advantista.html'">
+          <div class="hc-icon">&#x1F3B5;</div>
+          <div class="hc-title">Fihirana Advantista</div>
+          <div class="hc-sub">Hira fiderana 001â€“800</div>
+          <div class="hc-badge">798 hira</div>
+        </div>
+        <div class="home-card sabata" onclick="openSlides()">
+          <div class="hc-icon">=</div>
+          <div class="hc-title">Programa Sabata</div>
+          <div class="hc-sub">Filaharan'ny fanompoam-pivavahana</div>
+          <div class="hc-badge">16 fizarana</div>
+        </div>
+      </div>
+      <div class="home-sig">Media SDA Ambolokandrina</div>
+      <div class="home-visit" id="homeVisit"></div>
+    `;
+    root.appendChild(home);
+    requestAnimationFrame(()=>home.classList.add('visible'));
+    try{localStorage.setItem('splashReady','1')}catch(e){}
+    try{var n=parseInt(localStorage.getItem('visitCount'))||0;n++;localStorage.setItem('visitCount',n);var v=document.getElementById('homeVisit');if(v){var verses=["Fa fitiavan'Andriamanitra toy izao no nasehony tamin'izao tontolo izao: nomeny ny Zanany lahitokany","Mba tsy hisy ho very, fa hanana fiainana mandrakizay","Tsarovy ny andro Sabata hanamasinana azy","Ny Tompo no Mpiandry ahy, tsy hitoetra ho sahirana aho","Mifankatiava hianareo tahaka ny efa tia anareo aho","Mangataha dia homena anareo, mitadiava dia hahita hianareo","Aza manahy ny rahampitso, fa ny rahampitso no hanahy ny azy","Ny fahamarinana no hahafaka anareo","Mankanesa aty amiko hianareo rehetra izay miasa fatratra","Miposaka ho anareo izay matahotra ny anarako ny Masoandron'ny fahamarinana"];v.textContent='\u2767 '+verses[Math.floor(Math.random()*verses.length)];v.style.fontStyle='italic'}}catch(e){}
+  }
+
+  /* ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ SLIDESHOW ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ */
+  window.openSlides=function(){
+    isPlaying=false;
+    try{var saved=parseInt(localStorage.getItem('sabataSlide'));currentSlide=(!isNaN(saved)&&saved>=0&&saved<slides.length)?saved:0}catch(e){currentSlide=0}
+    if(slideShowEl){slideShowEl.remove();slideShowEl=null}
+    slideShowEl=document.createElement('div');slideShowEl.className='slideshow';
+
+    let slidesHTML='';
+    slides.forEach((s,i)=>{
+      let inner=`<div class="slide-content">`;
+      if(s.timer){
+        const m=Math.floor(s.timer/60),sec=s.timer%60;
+        inner+=`<h1>${s.title}</h1><div class="sub">${s.sub}</div>
+          <div class="timer" id="timer${i}">${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}</div>
+          <div class="timer-bar-wrap"><div class="timer-bar" id="timerBar${i}"></div></div>`;
+      } else {
+        inner+=`<h1>${s.title}</h1><div class="sub">${s.sub}</div>`;
+      }
+      inner+=`<div class="slide-signature">FIANGONANA ADVANTISTA AMBOLOKANDRINA</div></div><div class="number">${String(s.id).padStart(2,'0')} / 16</div>`;
+      slidesHTML+=`<div class="slide${i===0?' active':''}" id="slide${i}" style="background-image:url('${s.bg}')">${inner}<img class="slide-logo" src="logoslide.png" alt=""></div>`;
+    });
+
+    slideShowEl.innerHTML=`
+      <button class="slide-close" onclick="closeSlides()" aria-label="Hidy">&#x2716;</button>
+      <div class="slide-hint" id="slideHint">&#x2190; &#x2192; na swipe &#x2022; Espace: lecture auto &#x2022; Esc: hivoaka</div>
+      ${slidesHTML}
+      <div class="slide-controls">
+        <div class="ctrl-row">
+          <button class="ctrl-btn" onclick="prevSlide()" aria-label="Teo aloha">&#x25C0;</button>
+          <button class="play-btn" id="playBtn" onclick="togglePlay()" aria-label="Lalao / Hijanona">&#x25B6;</button>
+          <button class="ctrl-btn" onclick="nextSlide()" aria-label="Manaraka">&#x25B6;</button>
+          <div class="ctrl-progress" onclick="seekSlide(event)"><div class="ctrl-progress-fill" id="progressFill"></div></div>
+          <div class="ctrl-label" id="ctrlLabel">01 / 16</div>
+          <button class="ctrl-btn exit" onclick="closeSlides()" aria-label="Hivoaka">&#x2716;</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(slideShowEl);
+    requestAnimationFrame(()=>slideShowEl.classList.add('open'));
+    try{if(!localStorage.getItem('hintShown')){localStorage.setItem('hintShown','1');setTimeout(function(){var h=document.getElementById('slideHint');if(h)h.classList.add('hide')},4000)}}catch(e){}
+    try{if(document.documentElement.requestFullscreen&&!document.fullscreenElement)document.documentElement.requestFullscreen()}catch(e){}
+
+    timerDisplay=document.getElementById('timer0');
+    timerBar=document.getElementById('timerBar0');
+    progressFill=document.getElementById('progressFill');
+    labelEl=document.getElementById('ctrlLabel');
+    playBtn=document.getElementById('playBtn');
+    updateControls();
+    resetHideTimer();
+    sigIdx=0;if(sigTimer)clearInterval(sigTimer);
+    sigTimer=setInterval(function(){
+      sigIdx=(sigIdx+1)%sigTexts.length;
+      document.querySelectorAll('.slide-signature').forEach(function(el){
+        el.style.opacity='0';el.style.transform='translateX(-50%) translateY(8px)';
+        setTimeout(function(){
+          el.textContent=sigTexts[sigIdx];
+          el.style.opacity='1';el.style.transform='translateX(-50%) translateY(0)';
+        },400);
+      });
+    },5000);
+
+  };
+
+  let hideTimeout=null;
+  function resetHideTimer(){
+    if(!slideShowEl)return;
+    const ctrl=slideShowEl.querySelector('.slide-controls');
+    const close=slideShowEl.querySelector('.slide-close');
+    if(ctrl)ctrl.style.opacity='1';if(close)close.style.opacity='1';
+    if(hideTimeout)clearTimeout(hideTimeout);
+    hideTimeout=setTimeout(()=>{
+      if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+      if(ctrl)ctrl.style.opacity='0';if(close)close.style.opacity='0';
+    },2000);
+  }
+
+  document.addEventListener('keydown',function(e){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    if(e.key==='ArrowRight'){nextSlide();resetHideTimer()}
+    if(e.key==='ArrowLeft'){prevSlide();resetHideTimer()}
+    if(e.key===' '||e.key==='Spacebar'){e.preventDefault();togglePlay();resetHideTimer()}
+    if(e.key==='Escape'){closeSlides()}
+  });
+
+  document.addEventListener('mousemove',function(){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    resetHideTimer();
+  });
+
+  var touchStartX=0,touchStartY=0;
+  document.addEventListener('touchstart',function(e){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    touchStartX=e.changedTouches[0].screenX;
+    touchStartY=e.changedTouches[0].screenY;
+  },{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(!slideShowEl||!slideShowEl.classList.contains('open'))return;
+    var dx=e.changedTouches[0].screenX-touchStartX;
+    var dy=e.changedTouches[0].screenY-touchStartY;
+    if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5){
+      if(dx<0){nextSlide()}else{prevSlide()}
+      resetHideTimer();
+    }
+  },{passive:true});
+
+  window.closeSlides=function(){
+    try{localStorage.setItem('sabataSlide',currentSlide)}catch(e){}
+    if(sigTimer){clearInterval(sigTimer);sigTimer=null}
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null}
+    try{if(document.fullscreenElement)document.exitFullscreen()}catch(e){}
+    slideShowEl.classList.remove('open');
+    setTimeout(()=>{if(slideShowEl){slideShowEl.remove();slideShowEl=null}},500);
+  };
+
+  window.nextSlide=function(){
+    if(currentSlide<slides.length-1){goTo(currentSlide+1)}
+  };
+  window.prevSlide=function(){
+    if(currentSlide>0){goTo(currentSlide-1)}
+  };
+  window.seekSlide=function(e){
+    const rect=e.currentTarget.getBoundingClientRect();
+    const x=e.clientX-rect.left;
+    const p=x/rect.width;
+    const idx=Math.round(p*(slides.length-1));
+    goTo(Math.max(0,Math.min(slides.length-1,idx)));
+  };
+
+  window.goTo=function goTo(idx){
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null;isPlaying=false;if(playBtn)playBtn.innerHTML='&#x25B6;'}
+    if(currentSlide===idx)return;
+    const oldEl=document.getElementById('slide'+currentSlide);
+    const t=transTypes[transIdx%transTypes.length];transIdx++;
+    const dir=idx>currentSlide?1:-1;
+    oldEl.classList.remove('active');
+    if(dir>0)oldEl.classList.add('exit','exit-'+t);
+    else oldEl.classList.add('exit','exit-'+t);
+    currentSlide=idx;
+    const newEl=document.getElementById('slide'+currentSlide);
+    newEl.classList.add('active');
+    if(dir>0)newEl.classList.add('enter-'+t);
+    else newEl.classList.add('enter-'+t);
+    setTimeout(()=>{oldEl.classList.remove('exit','exit-'+t);newEl.classList.remove('enter-'+t)},800);
+    timerDisplay=document.getElementById('timer'+currentSlide);
+    timerBar=document.getElementById('timerBar'+currentSlide);
+    updateControls();
+    const s=slides[currentSlide];
+    if(s.timer){
+      timerRemaining=s.timer;
+      setTimeout(()=>togglePlay(),300);
+    }
+    try{localStorage.setItem('sabataSlide',currentSlide)}catch(e){}
+  }
+
+  window.togglePlay=function(){
+    const s=slides[currentSlide];
+    if(!s.timer){return}
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null;isPlaying=false;playBtn.innerHTML='&#x25B6;';return}
+    isPlaying=true;playBtn.innerHTML='&#x23F8;';
+    if(timerRemaining<=0)timerRemaining=s.timer;
+    timerInterval=setInterval(()=>{
+      timerRemaining--;
+      if(timerRemaining<=0){clearInterval(timerInterval);timerInterval=null;isPlaying=false;playBtn.innerHTML='&#x25B6;';timerRemaining=0}
+      updateTimer();
+    },1000);
+  };
+
+  function updateTimer(){
+    if(!timerDisplay)return;
+    const m=Math.floor(timerRemaining/60),sec=timerRemaining%60;
+    timerDisplay.textContent=String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0');
+    timerDisplay.classList.remove('pop');
+    void timerDisplay.offsetWidth;
+    timerDisplay.classList.add('pop');
+    if(timerBar){
+      const s=slides[currentSlide];
+      const p=s.timer?timerRemaining/s.timer*100:0;
+      timerBar.style.width=p+'%';
+    }
+  }
+
+  function updateControls(){
+    if(progressFill)progressFill.style.width=((currentSlide+1)/slides.length*100)+'%';
+    if(labelEl)labelEl.textContent=String(currentSlide+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
+    const s=slides[currentSlide];
+    if(s.timer){
+      timerRemaining=s.timer;
+      if(timerDisplay){
+        const m=Math.floor(s.timer/60),sec=s.timer%60;
+        timerDisplay.textContent=String(m).padStart(2,'0')+':'+String(sec).padStart(2,'0');
+      }
+      if(timerBar)timerBar.style.width='100%';
+      if(playBtn)playBtn.style.display='flex';
+    } else {
+      if(playBtn)playBtn.style.display='none';
+    }
+  }
+
+  try{if(location.search.indexOf('slideshow')>=0){
+    history.replaceState(null,'','index.html');
+    var sp=document.querySelector('.splash');
+    if(sp)sp.style.display='none';
+    showHome();
+    setTimeout(function(){if(typeof openSlides==='function')openSlides()},100);
+  }else{setTimeout(typeNext,400)}
+}catch(e){setTimeout(typeNext,400)}
+})();
+</script>
+<style>
+/* floating nav */
+#floatNav{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:99999;display:flex;align-items:center;gap:4px;padding:6px 10px;border-radius:30px;background:rgba(10,15,30,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.12);box-shadow:0 4px 24px rgba(0,0,0,.5);transition:opacity .4s ease,transform .4s ease;opacity:1}
+#floatNav.hide{opacity:0;transform:translateX(-50%) translateY(12px);pointer-events:none}
+#floatNav a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;text-decoration:none;font-size:16px;transition:all .2s;color:rgba(255,255,255,.5);background:transparent}
+#floatNav a:hover{background:rgba(255,255,255,.1);color:rgba(255,255,255,.9);transform:scale(1.1)}
+#floatNav a.active{background:rgba(10,132,255,.25);color:#0A84FF}
+#floatNav .sabata-link{background:rgba(52,199,89,.15);color:#34C759}
+#floatNav .sabata-link:hover{background:rgba(52,199,89,.3);color:#34C759}
+</style>
+<div id="floatNav">
+  <a href="index.html" class="active" title="Fandraisana">🏠</a>
+  <a href="javascript:void(0)" class="sabata-link" id="sabataNavBtn" title="Programa Sabata">▶</a>
+  <a href="baibolyMG_v2.html" title="Baiboly">📖</a>
+  <a href="fihirana_advantista.html" title="Fihirana">🎵</a>
+</div>
+<script>
+(function(){var n=document.getElementById('floatNav'),t=null;function s(){n.classList.remove('hide');if(t)clearTimeout(t);t=setTimeout(function(){n.classList.add('hide')},3000)}document.addEventListener('mousemove',s);document.addEventListener('touchstart',s);document.addEventListener('click',s);s()})();
+document.getElementById('sabataNavBtn').addEventListener('click',function(){
+  if(typeof openSlides==='function')openSlides();
+});
+</script>
+<script>if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js')</script>
+</body>
+</html>
